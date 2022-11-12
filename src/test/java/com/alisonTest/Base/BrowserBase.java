@@ -17,7 +17,7 @@ public class BrowserBase {
     public static WebDriver driver;
     public static Properties prop;
 
-    @Test(priority = 0)
+
     public static void Browser(){
 
         try{
@@ -32,7 +32,7 @@ public class BrowserBase {
             e.printStackTrace();
         }
     }
-@Test(priority = 1)
+
     public static void SetUp(){
         System.out.println("after the browser");
 
