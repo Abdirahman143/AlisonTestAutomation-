@@ -5,6 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.Test;
 
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -16,6 +17,7 @@ public class BrowserBase {
     public static WebDriver driver;
     public static Properties prop;
 
+    @Test(priority = 0)
     public static void Browser(){
 
         try{
@@ -30,12 +32,12 @@ public class BrowserBase {
             e.printStackTrace();
         }
     }
-
+@Test(priority = 1)
     public static void SetUp(){
         System.out.println("after the browser");
 
         if(prop.getProperty("browser").equalsIgnoreCase("chrome")){
-            WebDriverManager.chromedriver().cachePath("src/main/java/com/alison/drivers");
+            WebDriverManager.chromedriver().cachePath("src/main/java/com/alison/drivers").setup();
             driver = new ChromeDriver();
 
         }
@@ -48,8 +50,8 @@ public class BrowserBase {
             WebDriverManager.edgedriver().cachePath("src/main/java/com/alison/drivers").setup();
             driver =new EdgeDriver();
         }
-        System.out.println("Before Drier");
-        driver.navigate().to(prop.getProperty("url"));
+        System.out.println("Before driver");
+        driver.get(prop.getProperty("url"));
         System.out.println("After the driver");
         driver.manage().window().maximize();
         driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(20));
