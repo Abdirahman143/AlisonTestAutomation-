@@ -1,4 +1,5 @@
 com\alisonTest\Base\BrowserBase.class
 com\alisonTest\LoginTest\Login.class
 com\alisonTest\Dashboard\Dashboard.class
+com\alisonTest\LogoutTest\Logout.class
 com\alisonTest\HomeTest\Home.class

@@ -1,3 +1,4 @@
 com\alison\pages\Home\HomePage.class
 com\alison\pages\Dashboard\DashboardPage.class
 com\alison\pages\Login\LoginPage.class
+com\alison\pages\Logout\LogoutPage.class

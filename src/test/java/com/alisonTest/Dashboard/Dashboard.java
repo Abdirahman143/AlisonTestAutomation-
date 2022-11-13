@@ -16,11 +16,11 @@ public class Dashboard  extends BrowserBase {
         dashboardPage = loginPage.ClickLogIn(driver);
     }
       @Test(priority = 1)
-    public void verifyProfile()  {
+    public void verifyProfile() throws InterruptedException {
         String expected ="Abdirahman Abdi";
        String actual= dashboardPage.VerifyProfileName(driver);
 
         Assert.assertEquals(actual,expected);
-
+    Thread.sleep(5000);
     }
 }

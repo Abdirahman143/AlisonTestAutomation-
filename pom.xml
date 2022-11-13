@@ -24,6 +24,7 @@
                 <version>3.0.0-M7</version>
                 <configuration>
                     <suiteXmlFiles>
+                        <xmlFile>Regression.xml</xmlFile>
                     </suiteXmlFiles>
                 </configuration>
             </plugin>

@@ -7,7 +7,6 @@
       <class name="com.alisonTest.LoginTest.Login"/>
       <class name="com.alisonTest.Dashboard.Dashboard"></class>
       <class name="com.alisonTest.LogoutTest.Logout"></class>
-
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
