@@ -9,7 +9,8 @@ public class DashboardPage {
 
 
 
-    public String VerifyProfileName(WebDriver driver){
+    public String VerifyProfileName(WebDriver driver) {
         return  driver.findElement(profileName).getText();
+
     }
 }

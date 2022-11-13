@@ -16,7 +16,7 @@ public class Dashboard  extends BrowserBase {
         dashboardPage = loginPage.ClickLogIn(driver);
     }
       @Test(priority = 1)
-    public void verifyProfile(){
+    public void verifyProfile()  {
         String expected ="Abdirahman Abdi";
        String actual= dashboardPage.VerifyProfileName(driver);
 
