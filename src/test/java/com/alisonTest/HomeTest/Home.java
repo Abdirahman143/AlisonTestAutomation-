@@ -23,7 +23,7 @@ public class Home extends BrowserBase {
     }
 @Test(priority = 3)
     public void  ClickEmail(){
-        loginPage.ClickEmail(driver,"abdirahman.bashir88gmail.com");
+        loginPage.ClickEmail(driver,"abdirahman.bashir88@gmail.com");
     }
     @Test(priority = 4)
     public void ClickPassword(){

@@ -5,6 +5,7 @@
     <classes>
       <class name="com.alisonTest.HomeTest.Home"></class>
       <class name="com.alisonTest.LoginTest.Login"/>
+      <class name="com.alisonTest.Dashboard.Dashboard"></class>
 
     </classes>
   </test> <!-- Test -->
